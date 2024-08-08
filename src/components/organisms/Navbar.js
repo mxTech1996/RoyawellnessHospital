@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <NavbarV2
       linksProps={{
-        variant: "link-v2",
+        variant: "underline",
         align: "left",
+
       }}
       textColor="black"
-
-
+      withSearch={false}
       withLogo={true}
       imageProps={{
         src: dataSite.iconImage,
@@ -37,16 +37,21 @@ const Navbar = () => {
       }}
       buttonCartProps={{
         onClick: () => router.push("/my-cart"),
+        className: "text-white",
 
       }}
       buttonContactProps={{
+        className: "text-white",
         onClick: () => router.push("/more-information"),
       }}
+
 
       onRedirect={(path) => router.push(path)}
       onSearch={(value) => { }}
       stylesContentLink={{
-        backgroundColor: "#f7dc6f",
+        backgroundColor: "#9EC8EF",
+        justifyContent: "center",
+
       }}
     />
   );

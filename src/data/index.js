@@ -1,7 +1,7 @@
 
 export const pageName = "RoyawellnessHospital";
-export const primaryColor = "#000000";
-export const backgroundColor = "#FFFFFF";
+export const primaryColor = "#FFFF";
+export const backgroundColor = "#3B4D5C";
 export const makeClearBackground = (color) => {
   return {
     backgroundColor: color,
@@ -13,7 +13,7 @@ export const makeClearBackground = (color) => {
 export const navData = [
   {
     href: '/#products',
-    label: "Let's start!",
+    label: "Our Courses",
   },
   {
     href: '/#our-services',
